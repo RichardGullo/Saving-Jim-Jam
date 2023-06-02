@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+    <div class="game-wrapper">
+        <div id="screen1" class="screen1">
+            <div class="screen1-content">
+                <div class="title-container">
+                    <p class="version">v:1.0</p>
+                    <h1>Saving <br> Jim Jam</h1>
+                    <img class="cat-head" src="./img/cat-head/cathead.png"/>
+                </div>
+                <div class="play-container">
+                    <a id="play-button" class="btn btn-primary play-button">Play Game</a>
+                </div>
+                <img class="net" src="./img/catching-nets/catching-net1-small.png" />
+                <a id="help-btn" class="btn btn-primary btn-round help-btn">?</a>
+            </div>
+        </div>
+        <div id="screen2" class="screen2 hide">
+            <h2>How to Play</h2>
+            <p>
+                Swipe the net(cursor) over the cat (JimJam) to save him.
+                If JimJam falls below the screen, you lose a life. If you lose all
+                3 lives, the game is over and you have failed to save beloved JimJam.
+            </p>
+            <a class="btn prev">Prev</a>
+            <a id="about-btn" class="btn btn-primary about">About</a>
+        </div>
+        <div id="screen3" class="screen3 hide">
+
+            <h2>About</h2>
+            <div class="bio-container">
+                <p>This game is inspired by a cat named Jim Jam owned by my coworker and dear friend Tony Baglien.</p>
+                <img class="jimjam" src="./img/about/jimjam-edited.png" />
+            </div>
+  
+            <a class="btn prev">Prev</a>
+        </div>
+        <div id="gamescreen" class="gamescreen hide">
+            <div class="lives-box"></div>
+            <div class="score-box">Score:<span class="score-value">0</span></div>
+            <div class="game">
+                <img src="./img/cat-sprites/black-cat-sprite-small.png" id="jimjam" class="jimjam" />
+            </div>
+            <div class="gameover hide">
+                <h2>Game Over!</h2>
+                <p>You have failed to save Jim Jam!</p>
+            </div>
+            <a class="btn btn-primary reset-button">Reset Game</a>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

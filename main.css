@@ -1,0 +1,235 @@
+/* Resets */
+
+* {
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+body{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Utility Classes */
+.btn{
+    padding:0.5rem 1rem;
+    background-color: skyblue;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-round{
+    border-radius: 100%;
+    height:50px;
+    width:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.play-button{
+    font-size:60px;
+}
+
+.game-wrapper{
+    height:600px;
+    width:600px;
+    border:1px solid black;
+    position: relative;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 5px 5px 0px #555;
+}
+
+/* Screen 1 */
+.screen1{
+    display: block;
+    padding:20px;
+}
+
+.screen1 .version{
+    position: absolute;
+    top:10px;
+    left:10px;
+}
+
+.screen1 .title-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top:50px;
+}
+
+.screen1 .play-container{
+    margin-top:40px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.screen1 .start-button{
+
+}
+
+.screen1 .cat-head{
+    width:200px;
+    object-fit: cover;
+}
+
+.screen1 .net {
+    width:200px;
+    position: absolute;
+    bottom:0;
+}
+
+.screen1 .help-btn {
+    position: absolute;
+    bottom:10px;
+    right:10px;
+}
+
+.screen1 h1{
+    font-size: 80px;
+}
+
+
+/* Screen 2 */
+
+.screen2{
+    padding:20px 70px 0px 70px;
+}
+
+.screen2 h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.screen2 p{
+    font-size:20px;
+    line-height: 1.5;
+}
+
+.screen2 .prev{
+    position: absolute;
+    left:10px;
+    bottom:10px;
+    font-size: 20px;
+}
+
+.screen2 .about {
+    position: absolute;
+    right:10px;
+    bottom:10px;
+    font-size: 20px;
+}
+
+/* Screen 3 */
+.screen3{
+    padding:20px;
+}
+
+.screen3 h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.screen3 .bio-container{
+    display: flex;
+}
+
+.screen3 .jimjam{
+    width:200px;
+}
+
+.screen3 p  {
+    font-size:20px;
+    line-height: 1.5;
+}
+
+.screen3 .prev{
+    position: absolute;
+    left:10px;
+    bottom:10px;
+    font-size: 20px;
+}
+
+/* Game Screen */
+
+.gamescreen{
+    height:100%;
+    position: relative;
+}
+
+.gamescreen .lives-box{
+    position: absolute;
+    padding:10px 30px;
+    border:1px solid black;
+    background-color: skyblue;
+    border-top-left-radius: 20px;
+}
+
+.gamescreen .lives-box i{
+    color:red;
+    margin-right: 5px;
+}
+
+.gamescreen .score-box{
+    position: absolute;
+    right:0;
+    padding:10px 15px;
+    background-color: steelblue;
+    border:1px solid black;
+    border-top-right-radius: 20px;
+}
+
+.gamescreen .reset-button{
+    position: absolute;
+    bottom:-50px;
+    left:250px;
+}
+
+.gamescreen .jimjam {
+    position:absolute;
+    z-index: 10;
+    left:250px;
+    top:-100px;
+}
+
+.gamescreen .game {
+    height:100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.gamescreen .gameover{
+    position: absolute;
+    height:300px;
+    width:300px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border:1px solid red;
+    text-align: center;
+    background:linear-gradient(dodgerblue, steelblue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gamescreen .gameover h2 {
+    font-size:40px !important;
+    margin-bottom: 10px;
+}
+
+.gamescreen .gameover p {
+    font-size:20px;
+}
+
+.hide{
+    display: none !important;
+}
